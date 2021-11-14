@@ -1,0 +1,98 @@
+/* Importing the fonts */
+@font-face {
+    font-family: "Optima";
+    src: url("../Fonts/Optima.TTF");
+    src: url("../Fonts/Optima - Bold.TTF");
+    src: url("../Fonts/Optima - Italic.ttf");
+    src: url("../Fonts/Optima - Medium.ttf");
+}
+@font-face {
+    font-family: "Century Gothic";
+    src: url("../Fonts/Century Gothic.ttf");
+}
+:root {
+    /* Declaration of the variables */
+    --vertical: 100%;
+    --horizontal: 100%;
+    --fontSize: 100%;
+    --optima: "Optima";
+    --centuryGothic: "Century Gothic";
+    --color1: rgb(167, 169, 172);
+    --color2: rgb(0, 125, 190);
+    --color3: rgb(0, 88, 138);
+    --color4: rgb(0, 171, 189);
+    --color5: rgb(84, 198, 211);
+    --color6: rgb(0, 183, 199);
+    --color7: rgb(35, 31, 32);
+    --color8: rgb(99, 100, 102);
+    --height: 768px;
+    --width: 1366px;
+}
+/* Styling of the body */
+* {
+    margin: calc(var(--vertical) * 0);
+    font-size: var(--fontSize);
+    font-family: var(--optima), var(--centuryGothic);
+    width: var(--horizontal);
+}
+header,
+header nav {
+    width: var(--horizontal);
+}
+header #top,
+header #bottom {
+    display: flex;
+}
+header #bottom {
+    background-color: var(--color7);
+}
+header #top div,
+header #bottom div {
+    text-align: center;
+}
+header #top div {
+    width: calc(var(--horizontal) / 3);
+}
+header #top div #event,
+header #top div #venue,
+header #top div #date {
+    width: var(--horizontal);
+    font-weight: bold;
+    font-family: var(--centuryGothic);
+    margin: calc(var(--vertical) * 0.02) calc(var(--horizontal) * 0);
+}
+header #top div #event {
+    font-size: calc(var(--fontSize) * 1.1);
+}
+header #top div #venue #organization {
+    font-size: calc(var(--fontSize) * 1.331);
+    text-transform: uppercase;
+}
+header #top div #venue div {
+    width: var(--horizontal);
+    color: var(--color4);
+    margin: calc(var(--vertical) * 0.01) calc(var(--horizontal) * 0);
+    font-size: calc(var(--fontSize) * 0.729);
+}
+header #top #organizationLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header #top #organizationLogo a img {
+    width: calc(var(--horizontal) * 0.9);
+    height: auto;
+}
+header #bottom div {
+    width: calc(var(--horizontal) / 11);
+    font-size: calc(var(--fontSize) * 0.9);
+    margin: calc(var(--vertical) * 0.01) calc(var(--horizontal) * 0);
+}
+header #bottom div a {
+    text-decoration: none;
+    color: var(--color5);
+}
+header #bottom div a:hover {
+    text-decoration: underline;
+    color: var(--color1);
+}
