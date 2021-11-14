@@ -13,7 +13,7 @@ class Server {
     init() {
         // Creating the server to read the requests
         this.hyperTextTransferProtocol
-            .createServer((request, _response) => {
+            .createServer((request, response) => {
                 // Logging the request
                 console.log(
                     "URL: " +
@@ -23,35 +23,26 @@ class Server {
                         request.method
                 );
                 // If-statement to verify the uniform resource locator of the request
-                if (request.url == this.domain + "/") {
-                    this.homepage();
-                }
-            })
-            .listen(8080);
-    }
-    // Homepage method
-    homepage() {
-        // Creating the server on homepage
-        this.hyperTextTransferProtocol
-            .createServer((_request, response) => {
-                // Setting the response mime type
-                response.setHeader("Content-Type", "text/html");
-                // Reading the file for the homepage
-                this.fileSystem.readFile(
-                    "./Pages/Homepage.html",
-                    (error, data) => {
-                        // If-statement to verify the HTTP status of the response
-                        if (!error) {
-                            // Generating a HTTP200 response
-                            response.writeHead(200);
-                            response.end(data);
-                        } else {
-                            // Generating a HTTP404 response
-                            response.writeHead(404);
-                            response.end("404 - Page not Found");
+                if (request.url == "/") {
+                    // Setting the response mime type
+                    response.setHeader("Content-Type", "text/html");
+                    // Reading the file for the homepage
+                    this.fileSystem.readFile(
+                        "./Pages/Homepage.html",
+                        (error, data) => {
+                            // If-statement to verify the HTTP status of the response
+                            if (!error) {
+                                // Generating a HTTP200 response
+                                response.writeHead(200);
+                                response.end(data);
+                            } else {
+                                // Generating a HTTP404 response
+                                response.writeHead(404);
+                                response.end("404 - Page not Found");
+                            }
                         }
-                    }
-                );
+                    );
+                }
             })
             .listen(8080);
     }
