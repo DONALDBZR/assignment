@@ -1,53 +1,37 @@
-// Server class
-class Server {
-    // Constructor method
-    constructor() {
-        // Importing hyper-text transfer protocol
-        this.hyperTextTransferProtocol = require("http");
-        // Importing the file system
-        this.fileSystem = require("fs");
-        this.domain =
-            "http://stormysystem.ddns.net:8080/Darkness4869/assignment";
-    }
-    // Initialize method
-    init() {
-        // Creating the server to read the requests
-        this.hyperTextTransferProtocol
-            .createServer((request, response) => {
-                // Logging the request
-                console.log(
-                    "URL: " +
-                        this.domain +
-                        request.url +
-                        "\nREQUEST METHOD: " +
-                        request.method
-                );
-                // If-statement to verify the uniform resource locator of the request
-                if (request.url == "/") {
-                    // Setting the response mime type
-                    response.setHeader("Content-Type", "text/html");
-                    // Reading the file for the homepage
-                    this.fileSystem.readFile(
-                        "./Pages/Homepage.html",
-                        (error, data) => {
-                            // If-statement to verify the HTTP status of the response
-                            if (!error) {
-                                // Generating a HTTP200 response
-                                response.writeHead(200);
-                                response.end(data);
-                            } else {
-                                // Generating a HTTP404 response
-                                response.writeHead(404);
-                                response.end("404 - Page not Found");
-                            }
-                        }
-                    );
+// Importing the Hyper-Text Transfer Protocol
+const hyperTextTransferProtocol = require("http");
+// Importing the File system
+const fileSystem = require("fs");
+// Assigning the domain!  Only used for console logging purpose 😅
+const domain = "http://stormysystem.ddns.net:8080/Darkness4869/assignment";
+// Creating the server to manage the requests and the responses
+hyperTextTransferProtocol
+    .createServer((request, response) => {
+        // Logging the request
+        console.log(
+            "URL: " +
+                domain +
+                request.url +
+                "\nREQUEST METHOD: " +
+                request.method
+        );
+        // If-statement to verify the uniform resource locator of the request
+        if (request.url == "/") {
+            // Setting the response mime type
+            response.setHeader("Content-Type", "text/html");
+            // Reading the file for the homepage
+            fileSystem.readFile("./Pages/Homepage.html", (error, data) => {
+                // If-statement to verify the HTTP status of the response
+                if (!error) {
+                    // Generating a HTTP200 response
+                    response.writeHead(200);
+                    response.end(data);
+                } else {
+                    // Generating a HTTP404 response
+                    response.writeHead(404);
+                    response.end("404 - Page not Found");
                 }
-            })
-            .listen(8080);
-    }
-}
-// Instantiating the server
-const server = new Server();
-// Initializing the server
-server.init();
+            });
+        }
+    })
+    .listen(8080);
