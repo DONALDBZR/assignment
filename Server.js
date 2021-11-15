@@ -32,6 +32,26 @@ hyperTextTransferProtocol
                     response.end("404 - Page not Found");
                 }
             });
+        } else if (request.url == "/Login") {
+            // Setting the response mime type
+            response.setHeader("Content-Type", "text/html");
+            // Reading the file for the homepage
+            fileSystem.readFile("./Pages/Login.html", (error, data) => {
+                // If-statement to verify the HTTP status of the response
+                if (!error) {
+                    // Generating a HTTP200 response
+                    response.writeHead(200);
+                    response.end(data);
+                } else {
+                    // Generating a HTTP404 response
+                    response.writeHead(404);
+                    response.end("404 - Page not Found");
+                }
+            });
+        } else {
+            // Generating a HTTP404 response
+            response.writeHead(404);
+            response.end("404 - Page not Found");
         }
     })
     .listen(8080);
