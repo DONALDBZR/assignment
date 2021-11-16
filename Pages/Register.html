@@ -8,7 +8,7 @@
         <title>Assignment</title>
         <link
             rel="stylesheet"
-            href="http://stormysystem.ddns.net/Darkness4869/assignment/Stylesheets/Login.css"
+            href="http://stormysystem.ddns.net/Darkness4869/assignment/Stylesheets/Register.css"
         />
         <link
             rel="shortcut icon"
@@ -93,30 +93,50 @@
             </nav>
         </header>
         <main>
-            <h1>Login Form</h1>
+            <h1>Register Form</h1>
             <form method="post">
+                <div id="firstName">
+                    <label for="firstNameInput">First Name:</label>
+                    <input
+                        type="text"
+                        name="firstName"
+                        id="firstNameInput"
+                        placeholder="First Name"
+                        required
+                    />
+                </div>
+                <div id="lastName">
+                    <label for="lastNameInput">Last Name:</label>
+                    <input
+                        type="text"
+                        name="lastName"
+                        id="lastNameInput"
+                        placeholder="Last Name"
+                        required
+                    />
+                </div>
                 <div id="mailAddress">
                     <label for="mailAddressInput">Mail Address:</label>
                     <input
                         type="email"
-                        name="mailAddress"
-                        placeholder="Mail Address"
+                        name="mailAdress"
                         id="mailAddressInput"
+                        placeholder="Mail Address"
                         required
                     />
                 </div>
                 <div id="password">
-                    <label for="passwordInput">Password: </label>
+                    <label for="passwordInput">Password:</label>
                     <input
                         type="password"
                         name="password"
+                        id="passwordInput"
                         placeholder="Password"
                         required
-                        id="passwordInput"
                     />
                 </div>
                 <div id="submitButton">
-                    <input type="submit" value="Log In" />
+                    <input type="submit" value="Register" />
                 </div>
             </form>
         </main>

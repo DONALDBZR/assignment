@@ -1,3 +1,84 @@
+// API class
+class API {
+    // Constructor method
+    constructor() {
+        // Class variables
+        this.MySQL = require("mysql");
+        this.databaseHandler = this.MySQL.createConnection({
+            host: "stormysystem.ddns.net",
+            port: 3306,
+            database: "icacie",
+            user: "Darkness4869",
+            password: "Aegis4869",
+        });
+        this.statement;
+        // Connecting to the database
+        this.databaseHandler.connect((error) => this.handleConnection(error));
+    }
+    // Connection handler method
+    handleConnection(error) {
+        // If-statement to verify whether there is an error
+        if (error) {
+            throw error;
+        } else {
+            console.log("Database Connected!");
+        }
+    }
+}
+// User class
+class User {
+    // Constructor method
+    constructor() {
+        // Class variables
+        this.id;
+        this.mailAddress;
+        this.password;
+        this.firstName;
+        this.lastName;
+        // Instantiating API
+        this.API = new API();
+    }
+    // ID accessor method
+    getId() {
+        return this.id;
+    }
+    // ID mutator method
+    setId(id) {
+        this.id = id;
+    }
+    // Mail Address accessor method
+    getMailAddress() {
+        return this.mailAddress;
+    }
+    // Mail Address mutator method
+    setMailAddress(mailAddress) {
+        this.mailAddress = mailAddress;
+    }
+    // Password accessor method
+    getPassword() {
+        return this.password;
+    }
+    // Password mutator method
+    setPassword(password) {
+        this.password = password;
+    }
+    // First Name accessor method
+    getFirstName() {
+        return this.firstName;
+    }
+    // First Name mutator method
+    setFirstName(firstName) {
+        this.firstName = firstName;
+    }
+    // Last Name accessor method
+    getLastName() {
+        return this.lastName;
+    }
+    // Last Name mutator method
+    setLastName(lastName) {
+        this.lastName = lastName;
+    }
+}
 // Server class
 class Server {
     // Constructor method
@@ -9,13 +90,13 @@ class Server {
         // Importing the uniform resource locator
         this.uniformResourceLocator = require("url");
         // The hostname of the website
-        this.hostname = "http://stormysystem.ddns.net/";
-        // The port that the server is using
-        this.port = 8080;
+        this.hostname = "http://stormysystem.ddns.net:8080";
         // The server
         this.server;
         // The path
         this.path = "";
+        // Importing the API
+        this.API = new API();
     }
     // Initialize method
     init() {
@@ -52,8 +133,6 @@ class Server {
         console.log(
             "URL: " +
                 this.hostname +
-                ":" +
-                this.port +
                 request.url +
                 "\nREQUEST METHOD: " +
                 request.method
@@ -69,6 +148,9 @@ class Server {
                 break;
             case "/Login":
                 this.render("./Pages/Login.html", response);
+                break;
+            case "/Register":
+                this.render("./Pages/Register.html", response);
                 break;
             default:
                 // Generating HTTP/404 response
