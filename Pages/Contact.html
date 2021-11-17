@@ -9,7 +9,7 @@
         <title>Assignment</title>
         <link
             rel="stylesheet"
-            href="http://stormysystem.ddns.net/Darkness4869/assignment/Stylesheets/Homepage.css"
+            href="http://stormysystem.ddns.net/Darkness4869/assignment/Stylesheets/Contact.css"
         />
         <link
             rel="shortcut icon"
@@ -94,54 +94,83 @@
             </nav>
         </header>
         <main>
-            <h1>Welcome to ICACIE 2022</h1>
-            <p>
-                ICACIE 2022 focuses on all aspects of theory and applications in
-                various areas of advanced computing and intelligent engineering.
-                ICACIE is a multidisciplinary conference organized with the
-                objective of bringing together academicians, scientists,
-                researchers from industry, research scholars as well as students
-                working in all areas of advanced computing and intelligent
-                engineering. The conference will provide the authors along with
-                the listeners with opportunities for national, international
-                collaboration, networking among universities as well as
-                institutions from Mauritius and abroad for promoting research
-                and developing technologies. This conference's aim is to promote
-                the translation of basic research into applied investigation and
-                then into the practice. This conference will also create
-                awareness about the importance of basic scientific research in
-                different fields matching with the current trends. The
-                conference will provide the flavor of keynote lectures by
-                eminent speakers from different areas & panel discussion by
-                industry people. The scope of the conference includes all areas
-                of Advanced Computing and Intelligent Engineering.
-            </p>
-            <h1>ICACIE 2022 goes online!</h1>
-            <p id="conferenceMode">This conference will be held online.</p>
-            <p id="reason">
-                Due to the sanitary measures and travel restrictions related to
-                the coronavirus pandemic, the chairs of the ICACIE2022
-                Conference have decided to hold this year’s conference as an
-                online-only event.
-            </p>
-            <p id="matters">
-                Some important matters relating to the virtual conference of
-                ICACIE 2022 are as follows:
-            </p>
-            <ul>
-                <li>
-                    All accepted papers will be published by Springer in its
-                    LNNS series.
-                </li>
-                <li>
-                    Paper submission deadline and important dates stay the same.
-                </li>
-                <li>
-                    The virtual conference is programmed and adapted to better
-                    suit time differences, online presentation, and discussion
-                    formats.
-                </li>
-            </ul>
+            <h1>Contact Form</h1>
+            <form method="post">
+                <div id="firstName">
+                    <label for="firstNameInput">First Name:</label>
+                    <input
+                        type="text"
+                        name="firstName"
+                        id="firstNameInput"
+                        placeholder="First Name"
+                        required
+                    />
+                </div>
+                <div id="lastName">
+                    <label for="lastNameInput">Last Name:</label>
+                    <input
+                        type="text"
+                        name="lastName"
+                        id="lastNameInput"
+                        placeholder="Last Name"
+                        required
+                    />
+                </div>
+                <div id="organization">
+                    <label for="organizationInput">Organization:</label>
+                    <input
+                        type="text"
+                        name="organization"
+                        id="organizationInput"
+                        placeholder="Organization"
+                        required
+                    />
+                </div>
+                <div id="mailAddress">
+                    <label for="mailAddressInput">Mail Address:</label>
+                    <input
+                        type="email"
+                        name="mailAddress"
+                        id="mailAddressInput"
+                        placeholder="Mail Address"
+                        required
+                    />
+                </div>
+                <div id="telephoneNumber">
+                    <label for="telephoneNumberInput">Telephone Number:</label>
+                    <input
+                        type="tel"
+                        name="telephoneNumber"
+                        id="telephoneNumberInput"
+                        placeholder="Telephone Number"
+                        required
+                    />
+                </div>
+                <div id="subject">
+                    <label for="subjectInput">Subject:</label>
+                    <input
+                        type="text"
+                        name="subject"
+                        id="subjectInput"
+                        placeholder="Subject"
+                        required
+                    />
+                </div>
+                <div id="message">
+                    <label for="messageInput">Message:</label>
+                    <input
+                        type="text"
+                        name="message"
+                        id="messageInput"
+                        placeholder="Message"
+                        required
+                    />
+                </div>
+                <div id="sendButton">
+                    <input type="submit" value="Send" />
+                </div>
+                <div id="serverRendering"></div>
+            </form>
         </main>
         <footer>
             <img

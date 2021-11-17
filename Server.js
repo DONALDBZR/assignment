@@ -8,20 +8,17 @@ class API {
             host: "stormysystem.ddns.net",
             port: 3306,
             database: "icacie",
-            user: "Darkness4869",
-            password: "Aegis4869",
+            user: "",
+            password: "",
         });
-        this.statement;
         // Connecting to the database
-        this.databaseHandler.connect((error) => this.handleConnection(error));
+        this.databaseHandler.connect((error) => this.handleError(error));
     }
-    // Connection handler method
-    handleConnection(error) {
+    // Error handler method
+    handleError(error) {
         // If-statement to verify whether there is an error
         if (error) {
             throw error;
-        } else {
-            console.log("Database Connected!");
         }
     }
 }
@@ -78,6 +75,27 @@ class User {
     setLastName(lastName) {
         this.lastName = lastName;
     }
+    // Register method
+    register(json, response) {
+        // Retrieving data from the JSON
+        this.setFirstName(json.firstName);
+        this.setLastName(json.lastName);
+        this.setMailAddress(json.mailAddress);
+        this.setPassword(json.password);
+        // Inserting data in the database
+        this.API.databaseHandler.query(
+            "INSERT INTO icacie.User (UserFirstName, UserLastName, UserMailAddress, UserPassword) VALUES (?, ?, ?, ?)",
+            [
+                this.getFirstName(),
+                this.getLastName(),
+                this.getMailAddress(),
+                this.getPassword(),
+            ],
+            (error, results) => this.API.handleError(error)
+        );
+        // Redirecting the user
+        response.writeHead(301, { Location: "./Pages/Login.html" });
+    }
 }
 // Server class
 class Server {
@@ -89,14 +107,17 @@ class Server {
         this.fileSystem = require("fs");
         // Importing the uniform resource locator
         this.uniformResourceLocator = require("url");
+        // Importing the query string
+        this.queryString = require("querystring");
         // The hostname of the website
         this.hostname = "http://stormysystem.ddns.net:8080";
-        // The server
         this.server;
-        // The path
         this.path = "";
-        // Importing the API
+        this.body = "";
+        // Instantiating the API
         this.API = new API();
+        // Instantiating the user
+        this.User = new User();
     }
     // Initialize method
     init() {
@@ -137,28 +158,50 @@ class Server {
                 "\nREQUEST METHOD: " +
                 request.method
         );
-        // Getting the path by parsing the uniform resource locator requested by the client
-        const path = this.uniformResourceLocator.parse(request.url).pathname;
-        // Generating the reponse
-        response.writeHead(200, { "Content-Type": "text/html" });
-        // Switch-statement to verify the uniform resource locator of the request
-        switch (path) {
-            case "/":
-                this.render("./Pages/Homepage.html", response);
-                break;
-            case "/Login":
-                this.render("./Pages/Login.html", response);
-                break;
-            case "/Register":
-                this.render("./Pages/Register.html", response);
-                break;
-            default:
-                // Generating HTTP/404 response
-                response.writeHead(404);
-                response.write("ERROR 404: Not Found");
-                response.end();
-                break;
+        // If-statement to verify the method of the request
+        if (request.method === "POST") {
+            // Listening to the request
+            request.on("data", (chunk) => this.bufferToString(chunk));
+            request.on("end", () => this.registerForm(response));
+        } else {
+            // Getting the path by parsing the uniform resource locator requested by the client
+            const path = this.uniformResourceLocator.parse(
+                request.url
+            ).pathname;
+            // Generating the reponse
+            response.writeHead(200, { "Content-Type": "text/html" });
+            // Switch-statement to verify the uniform resource locator of the request
+            switch (path) {
+                case "/":
+                    this.render("./Pages/Homepage.html", response);
+                    break;
+                case "/Login":
+                    this.render("./Pages/Login.html", response);
+                    break;
+                case "/Register":
+                    this.render("./Pages/Register.html", response);
+                    break;
+                case "/Contact":
+                    this.render("./Pages/Contact.html", response);
+                    break;
+                default:
+                    // Generating HTTP/404 response
+                    response.writeHead(404);
+                    response.write("ERROR 404: Not Found");
+                    response.end();
+                    break;
+            }
         }
+    }
+    // Buffer To String method
+    bufferToString(dataPart) {
+        this.body += dataPart.toString();
+    }
+    // Register Form method
+    registerForm(response) {
+        // Local variable
+        let userJSON = this.queryString.parse(this.body);
+        this.User.register(userJSON, response);
     }
 }
 // Instantiating the server
