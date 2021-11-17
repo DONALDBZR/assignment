@@ -94,31 +94,66 @@ header #bottom div a:hover {
 main {
     width: var(--horizontal);
 }
-main h1,
-main p,
-main ul {
-    border-bottom: 1px solid var(--color8);
-    padding-bottom: calc(var(--vertical) * 0.02);
-}
 main h1 {
-    text-align: center;
-    font-family: var(--optima);
+    font-family: var(--centuryGothic);
     color: var(--color2);
+    text-align: center;
     border-bottom: 1px solid var(--color8);
     padding-bottom: calc(var(--vertical) * 0.01);
 }
-main p,
-main ul li {
+main #financialSponsorship,
+main #contact {
+    margin: calc(var(--vertical) * 0.01) calc(var(--horizontal) * 0.01);
+    width: calc(var(--horizontal) * 0.98);
     font-family: var(--centuryGothic);
 }
-main #conferenceMode,
-main #reason,
-main #matters {
-    border: none;
+main #financialSponsorship a,
+main #contact a {
+    color: var(--color10);
+    text-decoration: none;
 }
-main ul {
-    padding-left: calc(var(--horizontal) * 0.02);
+main #financialSponsorship a:hover,
+main #contact a:hover {
+    color: var(--color2);
+    text-decoration: underline;
+}
+main #sponsor,
+main #advertisement {
+    margin: calc(var(--vertical) * 0) calc(var(--horizontal) * 0.01);
     width: calc(var(--horizontal) * 0.98);
+}
+main #sponsor tr,
+main #advertisement tr {
+    width: var(--horizontal);
+    display: flex;
+}
+main #sponsor #tableHeader,
+main #advertisement #tableHeader {
+    background-color: var(--color2);
+    color: var(--color9);
+}
+main #sponsor tr th,
+main #sponsor tr td {
+    width: calc(var(--horizontal) / 3);
+    border: 1px solid var(--color7);
+    font-family: var(--centuryGothic);
+}
+main #sponsor tr td div {
+    margin: calc(var(--vertical) * 0.01) calc(var(--horizontal) * 0.01);
+    width: calc(var(--horizontal) * 0.98);
+}
+main #sponsor tr td ul li {
+    margin: calc(var(--vertical) * 0.01) calc(var(--horizontal) * 0);
+}
+main #sponsor tr td div,
+main #sponsor tr td ul li {
+    font-family: var(--centuryGothic);
+}
+main #advertisement tr th,
+main #advertisement tr td {
+    width: calc(var(--horizontal) / 2);
+    border: 1px solid var(--color7);
+    font-family: var(--centuryGothic);
 }
 /* Styling of the footer */
 footer {
@@ -153,20 +188,43 @@ footer {
     main h1 {
         font-size: calc(var(--fontSize) * 2);
     }
-    main p,
-    main ul li {
+    main #financialSponsorship,
+    main #contact {
         font-size: calc(var(--fontSize) * 0.9);
     }
-    /* Styling for the footer */
-    footer {
-        margin-top: calc(var(--vertical) * 0);
+    main #sponsor #tableHeader #category,
+    main #sponsor #tableHeader #minimumAmount,
+    main #sponsor #tableHeader #benefits,
+    main #advertisement #tableHeader #tarrif,
+    main #advertisement #tableHeader #particulars {
+        font-size: calc(var(--fontSize) * 1.458);
     }
+    main #sponsor tr #category {
+        width: calc(var(--horizontal) * 0.116226146);
+    }
+    main #sponsor tr #minimumAmount {
+        width: calc(var(--horizontal) * 0.1594323);
+    }
+    main #sponsor tr #benefits {
+        width: calc(var(--horizontal) * 0.724341553);
+    }
+    main #advertisement tr #tarrif {
+        width: calc(var(--horizontal) * 0.1937102445);
+    }
+    main #advertisement tr #particulars {
+        width: calc(var(--horizontal) * 0.8062897555);
+    }
+    main #sponsor tr td ul {
+        padding: calc(var(--vertical) * 0.01) calc(var(--horizontal) * 0.04);
+        width: calc(var(--horizontal) * 0.92);
+    }
+    /* Styling for the footer */
     footer img {
         width: auto;
         height: calc(var(--height) * 0.1);
     }
 }
-/* Media queries for Tablet */
+/* Media queries for #sponsort */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     /* Styling for the header */
     header #top div #event {
@@ -193,14 +251,37 @@ footer {
     main h1 {
         font-size: calc(var(--fontSize) * 1.458);
     }
-    main p,
-    main ul li {
+    main #financialSponsorship,
+    main #contact {
         font-size: calc(var(--fontSize) * 0.6561);
     }
-    /* Styling of the footer */
-    footer {
-        margin-top: calc(var(--vertical) * 0.58);
+    main #sponsor #tableHeader #category,
+    main #sponsor #tableHeader #minimumAmount,
+    main #sponsor #tableHeader #benefits,
+    main #advertisement #tableHeader #tarrif,
+    main #advertisement #tableHeader #particulars {
+        font-size: calc(var(--fontSize) * 1.062882);
     }
+    main #sponsor tr #category {
+        width: calc(var(--horizontal) * 0.2264918782);
+    }
+    main #sponsor tr #minimumAmount {
+        width: calc(var(--horizontal) * 0.2567673135);
+    }
+    main #sponsor tr #benefits {
+        width: calc(var(--horizontal) * 0.5167408083);
+    }
+    main #advertisement tr #tarrif {
+        width: calc(var(--horizontal) * 0.257828335);
+    }
+    main #advertisement tr #particulars {
+        width: calc(var(--horizontal) * 0.742171664);
+    }
+    main #sponsor tr td ul {
+        padding: calc(var(--vertical) * 0.01) calc(var(--horizontal) * 0.05);
+        width: calc(var(--horizontal) * 0.9);
+    }
+    /* Styling of the footer */
     footer img {
         width: auto;
         height: calc(var(--height) * 0.0729);
@@ -233,14 +314,47 @@ footer {
     main h1 {
         font-size: calc(var(--fontSize) * 1.062882);
     }
-    main p,
-    main ul li {
-        font-size: calc(var(--fontSize) * 0.4782969);
+    main #financialSponsorship,
+    main #contact {
+        font-size: calc(var(--fontSize) * 0.6561);
+    }
+    main #sponsor #tableHeader #category,
+    main #sponsor #tableHeader #minimumAmount,
+    main #sponsor #tableHeader #benefits,
+    main #advertisement #tableHeader #tarrif,
+    main #advertisement #tableHeader #particulars {
+        font-size: calc(var(--fontSize) * 0.774840978);
+    }
+    main #sponsor tr #category,
+    main #sponsor tr #minimumAmount,
+    main #sponsor tr #benefits,
+    main #advertisement tr #tarrif,
+    main #advertisement tr #particulars {
+        font-size: calc(var(--fontSize) * 0.729);
+    }
+    main #sponsor tr #category {
+        width: calc(var(--horizontal) * 0.3333333333);
+    }
+    main #sponsor tr #minimumAmount {
+        width: calc(var(--horizontal) * 0.4436666667);
+    }
+    main #sponsor tr #benefits {
+        width: calc(var(--horizontal) * 0.223);
+    }
+    main #advertisement tr #tarrif {
+        width: calc(var(--horizontal) * 0.405);
+    }
+    main #advertisement tr #particulars {
+        width: calc(var(--horizontal) * 0.595);
+    }
+    main #sponsor tr td ul {
+        padding: calc(var(--vertical) * 0.01) calc(var(--horizontal) * 0.2);
+        width: calc(var(--horizontal) * 0.6);
+    }
+    main #sponsor tr td ul li {
+        font-size: calc(var(--fontSize) * 0.729);
     }
     /* Styling of the footer */
-    footer {
-        margin-top: calc(var(--vertical) * 0.52);
-    }
     footer img {
         width: auto;
         height: calc(var(--height) * 0.0531441);

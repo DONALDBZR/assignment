@@ -32,8 +32,8 @@ class User {
         this.password;
         this.firstName;
         this.lastName;
-        // Instantiating API
-        this.API = new API();
+        // // Instantiating API
+        // this.API = new API();
     }
     // ID accessor method
     getId() {
@@ -114,8 +114,6 @@ class Server {
         this.server;
         this.path = "";
         this.body = "";
-        // Instantiating the API
-        this.API = new API();
         // Instantiating the user
         this.User = new User();
     }
@@ -183,6 +181,9 @@ class Server {
                     break;
                 case "/Contact":
                     this.render("./Pages/Contact.html", response);
+                    break;
+                case "/Sponsors":
+                    this.render("./Pages/Sponsors.html", response);
                     break;
                 default:
                     // Generating HTTP/404 response

@@ -26,6 +26,7 @@
     --color7: rgb(35, 31, 32);
     --color8: rgb(99, 100, 102);
     --color9: rgb(255, 255, 255);
+    --color10: rgb(0, 0, 0);
     --height: 768px;
     --width: 1366px;
 }
@@ -107,7 +108,7 @@ main form {
 main form #firstName,
 main form #lastName,
 main form #mailAddress,
-main form #organization,
+main form #institution,
 main form #telephoneNumber,
 main form #subject,
 main form #message {
@@ -121,8 +122,8 @@ main form #lastName input[type="text"],
 main form #mailAddress label,
 main form #mailAddress input[type="email"],
 main form #sendButton input[type="submit"],
-main form #organization label,
-main form #organization input[type="text"],
+main form #institution label,
+main form #institution input[type="text"],
 main form #telephoneNumber label,
 main form #telephoneNumber input[type="tel"],
 main form #subject label,
@@ -188,7 +189,7 @@ footer {
     main form #firstName label,
     main form #lastName label,
     main form #mailAddress label,
-    main form #organization label,
+    main form #institution label,
     main form #telephoneNumber label,
     main form #subject label,
     main form #message label {
@@ -197,7 +198,7 @@ footer {
     main form #firstName input[type="text"],
     main form #lastName input[type="text"],
     main form #mailAddress input[type="email"],
-    main form #organization input[type="text"],
+    main form #institution input[type="text"],
     main form #telephoneNumber input[type="tel"],
     main form #subject input[type="text"],
     main form #message input[type="text"] {
@@ -242,7 +243,7 @@ footer {
     main form #firstName label,
     main form #lastName label,
     main form #mailAddress label,
-    main form #organization label,
+    main form #institution label,
     main form #telephoneNumber label,
     main form #subject label,
     main form #message label {
@@ -251,7 +252,7 @@ footer {
     main form #firstName input[type="text"],
     main form #lastName input[type="text"],
     main form #mailAddress input[type="email"],
-    main form #organization input[type="text"],
+    main form #institution input[type="text"],
     main form #telephoneNumber input[type="tel"],
     main form #subject input[type="text"],
     main form #message input[type="text"] {
@@ -296,7 +297,7 @@ footer {
     main form #firstName label,
     main form #lastName label,
     main form #mailAddress label,
-    main form #organization label,
+    main form #institution label,
     main form #telephoneNumber label,
     main form #subject label,
     main form #message label {
@@ -305,7 +306,7 @@ footer {
     main form #firstName input[type="text"],
     main form #lastName input[type="text"],
     main form #mailAddress input[type="email"],
-    main form #organization input[type="text"],
+    main form #institution input[type="text"],
     main form #telephoneNumber input[type="tel"],
     main form #subject input[type="text"],
     main form #message input[type="text"] {
@@ -314,14 +315,14 @@ footer {
     main form #firstName label,
     main form #lastName label,
     main form #mailAddress label,
-    main form #organization label,
+    main form #institution label,
     main form #telephoneNumber label,
     main form #subject label,
     main form #message label,
     main form #firstName input[type="text"],
     main form #lastName input[type="text"],
     main form #mailAddress input[type="email"],
-    main form #organization input[type="text"],
+    main form #institution input[type="text"],
     main form #telephoneNumber input[type="tel"],
     main form #subject input[type="text"],
     main form #message input[type="text"] {
