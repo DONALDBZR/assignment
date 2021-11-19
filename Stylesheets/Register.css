@@ -144,8 +144,29 @@ main form #submitButton input[type="submit"]:hover {
 /* Styling of the footer */
 footer {
     background-color: var(--color7);
+    padding: calc(var(--vertical) * 0.01) calc(var(--horizontal) * 0);
+}
+footer nav {
+    width: var(--horizontal);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+}
+footer nav a {
+    opacity: 0.5;
+    text-decoration: none;
+    text-align: center;
+}
+footer nav a:hover {
+    opacity: 1;
+}
+footer nav .faFacebook,
+footer nav .faLinkedIn {
+    color: var(--color9);
+}
+footer div {
+    color: var(--color9);
+    font-size: var(--fontSize);
+    text-align: center;
 }
 /* Media queries for Desktop */
 @media screen and (min-width: 1024px) {
@@ -190,9 +211,15 @@ footer {
         width: calc(var(--horizontal) * 0.90734899);
     }
     /* Styling for the footer */
-    footer img {
+    footer {
+        margin-top: calc(var(--vertical) * 0);
+    }
+    footer nav {
+        font-size: calc(var(--fontSize) * 2);
+    }
+    footer nav a img {
         width: auto;
-        height: calc(var(--height) * 0.1);
+        height: calc(var(--height) * 0.05);
     }
 }
 /* Media queries for Tablet */
@@ -238,9 +265,15 @@ footer {
         width: calc(var(--horizontal) * 0.819449394);
     }
     /* Styling of the footer */
-    footer img {
+    footer {
+        margin-top: calc(var(--vertical) * 0.58);
+    }
+    footer nav {
+        font-size: calc(var(--fontSize) * 1.458);
+    }
+    footer nav a img {
         width: auto;
-        height: calc(var(--height) * 0.0729);
+        height: calc(var(--height) * 0.03645);
     }
 }
 /* Media queries for Mobile */
@@ -286,8 +319,14 @@ footer {
         width: calc(var(--horizontal) * 0.612973742);
     }
     /* Styling of the footer */
-    footer img {
+    footer {
+        margin-top: calc(var(--vertical) * 0.52);
+    }
+    footer nav {
+        font-size: calc(var(--fontSize) * 1.062882);
+    }
+    footer nav a img {
         width: auto;
-        height: calc(var(--height) * 0.0531441);
+        height: calc(var(--height) * 0.02657205);
     }
 }
