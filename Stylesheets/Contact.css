@@ -226,9 +226,6 @@ footer div {
         width: calc(var(--horizontal) * 0.90734899);
     }
     /* Styling for the footer */
-    footer {
-        margin-top: calc(var(--vertical) * 0);
-    }
     footer nav {
         font-size: calc(var(--fontSize) * 2);
     }
@@ -265,7 +262,7 @@ footer div {
         font-size: calc(var(--fontSize) * 1.458);
     }
     main form {
-        padding: calc(var(--vertical) * 0.313) calc(var(--horizontal) * 0.05);
+        padding: calc(var(--vertical) * 0.304) calc(var(--horizontal) * 0.05);
     }
     main form #firstName label,
     main form #lastName label,
@@ -286,9 +283,6 @@ footer div {
         width: calc(var(--horizontal) * 0.709221444);
     }
     /* Styling of the footer */
-    footer {
-        margin-top: calc(var(--vertical) * 0.58);
-    }
     footer nav {
         font-size: calc(var(--fontSize) * 1.458);
     }
@@ -325,7 +319,7 @@ footer div {
         font-size: calc(var(--fontSize) * 1.062882);
     }
     main form {
-        padding: calc(var(--vertical) * 0.28) calc(var(--horizontal) * 0.05);
+        padding: calc(var(--vertical) * 0.268) calc(var(--horizontal) * 0.05);
     }
     main form #firstName label,
     main form #lastName label,
@@ -362,9 +356,6 @@ footer div {
         font-size: calc(var(--fontSize) * 0.729);
     }
     /* Styling of the footer */
-    footer {
-        margin-top: calc(var(--vertical) * 0.52);
-    }
     footer nav {
         font-size: calc(var(--fontSize) * 1.062882);
     }

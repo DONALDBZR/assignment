@@ -190,7 +190,7 @@ footer div {
         font-size: calc(var(--fontSize) * 2);
     }
     main form {
-        padding: calc(var(--vertical) * 0.0619) calc(var(--horizontal) * 0.05);
+        padding: calc(var(--vertical) * 0.0564) calc(var(--horizontal) * 0.05);
     }
     main form #mailAddress label,
     main form #password label {
@@ -202,9 +202,6 @@ footer div {
         border: none;
     }
     /* Styling for the footer */
-    footer {
-        margin-top: calc(var(--vertical) * 0);
-    }
     footer nav {
         font-size: calc(var(--fontSize) * 2);
     }
@@ -241,7 +238,7 @@ footer div {
         font-size: calc(var(--fontSize) * 1.458);
     }
     main form {
-        padding: calc(var(--vertical) * 0.425) calc(var(--horizontal) * 0.05);
+        padding: calc(var(--vertical) * 0.417) calc(var(--horizontal) * 0.05);
     }
     main form #mailAddress label,
     main form #password label {
@@ -253,9 +250,6 @@ footer div {
         border: none;
     }
     /* Styling of the footer */
-    footer {
-        margin-top: calc(var(--vertical) * 0.58);
-    }
     footer nav {
         font-size: calc(var(--fontSize) * 1.458);
     }
@@ -292,7 +286,7 @@ footer div {
         font-size: calc(var(--fontSize) * 1.062882);
     }
     main form {
-        padding: calc(var(--vertical) * 0.48) calc(var(--horizontal) * 0.05);
+        padding: calc(var(--vertical) * 0.423) calc(var(--horizontal) * 0.05);
     }
     main form #mailAddress label,
     main form #password label {
@@ -304,9 +298,6 @@ footer div {
         border: none;
     }
     /* Styling of the footer */
-    footer {
-        margin-top: calc(var(--vertical) * 0.52);
-    }
     footer nav {
         font-size: calc(var(--fontSize) * 1.062882);
     }

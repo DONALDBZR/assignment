@@ -240,9 +240,6 @@ footer div {
         width: calc(var(--horizontal) * 0.92);
     }
     /* Styling for the footer */
-    footer {
-        margin-top: calc(var(--vertical) * 0);
-    }
     footer nav {
         font-size: calc(var(--fontSize) * 2);
     }
@@ -309,9 +306,6 @@ footer div {
         width: calc(var(--horizontal) * 0.9);
     }
     /* Styling of the footer */
-    footer {
-        margin-top: calc(var(--vertical) * 0.58);
-    }
     footer nav {
         font-size: calc(var(--fontSize) * 1.458);
     }
@@ -388,9 +382,6 @@ footer div {
         font-size: calc(var(--fontSize) * 0.729);
     }
     /* Styling of the footer */
-    footer {
-        margin-top: calc(var(--vertical) * 0.52);
-    }
     footer nav {
         font-size: calc(var(--fontSize) * 1.062882);
     }
