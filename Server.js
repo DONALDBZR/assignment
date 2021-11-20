@@ -203,6 +203,9 @@ class Server {
                 case "/Members":
                     this.render("./Pages/Members.html", response);
                     break;
+                case "/Dates":
+                    this.render("./Pages/Dates.html", response);
+                    break;
                 default:
                     // Generating HTTP/404 response
                     response.writeHead(404);

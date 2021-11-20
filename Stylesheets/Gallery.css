@@ -111,7 +111,8 @@ footer nav a:hover {
     opacity: 1;
 }
 footer nav .faFacebook,
-footer nav .faLinkedIn {
+footer nav .faLinkedIn,
+footer nav .faCalendar {
     color: var(--color9);
 }
 footer div {
@@ -145,6 +146,9 @@ footer div {
     /* Styling for the main */
 
     /* Styling for the footer */
+    footer {
+        margin-top: calc(var(--vertical) * 0.228);
+    }
     footer nav {
         font-size: calc(var(--fontSize) * 2);
     }
@@ -179,6 +183,9 @@ footer div {
     /* Styling for the main */
 
     /* Styling of the footer */
+    footer {
+        margin-top: calc(var(--vertical) * 0.994);
+    }
     footer nav {
         font-size: calc(var(--fontSize) * 1.458);
     }
@@ -213,6 +220,9 @@ footer div {
     /* Styling for the main */
 
     /* Styling of the footer */
+    footer {
+        margin-top: calc(var(--vertical) * 1.209);
+    }
     footer nav {
         font-size: calc(var(--fontSize) * 1.062882);
     }
