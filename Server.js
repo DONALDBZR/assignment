@@ -197,6 +197,9 @@ class Server {
                 case "/CallForPapers":
                     this.render("./Pages/CallForPapers.html", response);
                     break;
+                case "/Keynotes":
+                    this.render("./Pages/Keynotes.html", response);
+                    break;
                 default:
                     // Generating HTTP/404 response
                     response.writeHead(404);
