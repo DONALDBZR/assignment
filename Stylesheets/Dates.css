@@ -94,30 +94,48 @@ header #bottom div a:hover {
 main {
     width: var(--horizontal);
 }
-main p,
-main ul {
-    border-bottom: 1px solid var(--color8);
-    padding-bottom: calc(var(--vertical) * 0.02);
-}
 main h1 {
     text-align: center;
     font-family: var(--optima);
     color: var(--color2);
     border-bottom: 1px solid var(--color8);
     padding-bottom: calc(var(--vertical) * 0.01);
+    text-transform: uppercase;
 }
-main p,
-main ul li {
+main #container,
+main #container #tracks #paperSubmission,
+main #container #tracks #decisionNotification,
+main #container #tracks #ready {
+    width: var(--horizontal);
+    display: flex;
+}
+main #container #tracks {
+    width: calc(var(--horizontal) * 0.48);
+    padding: calc(var(--vertical) * 0) calc(var(--horizontal) * 0.01);
+}
+main #container #tracks h1 {
+    color: var(--color7);
+    background-color: var(--color1);
     font-family: var(--centuryGothic);
+    text-transform: capitalize;
 }
-main #conferenceMode,
-main #reason,
-main #matters {
-    border: none;
+main #container #tracks #paperSubmission,
+main #container #tracks #decisionNotification,
+main #container #tracks #ready,
+main #container #tracks #type {
+    margin: calc(var(--vertical) * 0.01) calc(var(--horizontal) * 0);
 }
-main ul {
-    padding-left: calc(var(--horizontal) * 0.02);
-    width: calc(var(--horizontal) * 0.98);
+main #container #tracks #paperSubmission p,
+main #container #tracks #decisionNotification p,
+main #container #track #type,
+main #container #tracks #ready p {
+    font-family: var(--optima);
+}
+main #container #tracks #paperSubmission #header,
+main #container #tracks #decisionNotification #header,
+main #container #tracks #type,
+main #container #tracks #ready #header {
+    font-weight: bold;
 }
 /* Styling of the footer */
 footer {
@@ -174,13 +192,22 @@ footer div {
     main h1 {
         font-size: calc(var(--fontSize) * 2);
     }
-    main p,
-    main ul li {
-        font-size: calc(var(--fontSize) * 0.9);
+    main #container #tracks h1 {
+        font-size: calc(var(--fontSize) * 1.8);
+    }
+    main #container #tracks #paperSubmission #header,
+    main #container #tracks #decisionNotification #header,
+    main #container #tracks #ready #header {
+        width: calc(var(--horizontal) * 0.295245);
+    }
+    main #container #tracks #paperSubmission p,
+    main #container #tracks #decisionNotification p,
+    main #container #tracks #ready p {
+        width: calc(var(--horizontal) * 0.704755);
     }
     /* Styling for the footer */
     footer {
-        margin-top: calc(var(--vertical) * 0);
+        margin-top: calc(var(--vertical) * 0.083);
     }
     footer nav {
         font-size: calc(var(--fontSize) * 2);
@@ -190,7 +217,7 @@ footer div {
         height: calc(var(--height) * 0.05);
     }
 }
-/* Media queries for Tablet */
+/* Media queries for #sponsort */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     /* Styling for the header */
     header #top div #event {
@@ -217,13 +244,22 @@ footer div {
     main h1 {
         font-size: calc(var(--fontSize) * 1.458);
     }
-    main p,
-    main ul li {
-        font-size: calc(var(--fontSize) * 0.6561);
+    main #container #tracks h1 {
+        font-size: calc(var(--fontSize) * 1.3122);
+    }
+    main #container #tracks #paperSubmission #header,
+    main #container #tracks #decisionNotification #header,
+    main #container #tracks #ready #header {
+        width: calc(var(--horizontal) * 0.507509581);
+    }
+    main #container #tracks #paperSubmission p,
+    main #container #tracks #decisionNotification p,
+    main #container #tracks #ready p {
+        width: calc(var(--horizontal) * 0.492490418);
     }
     /* Styling of the footer */
     footer {
-        margin-top: calc(var(--vertical) * 0.565);
+        margin-top: calc(var(--vertical) * 0.79);
     }
     footer nav {
         font-size: calc(var(--fontSize) * 1.458);
@@ -260,13 +296,21 @@ footer div {
     main h1 {
         font-size: calc(var(--fontSize) * 1.062882);
     }
-    main p,
-    main ul li {
-        font-size: calc(var(--fontSize) * 0.4782969);
+    main #container #tracks h1 {
+        font-size: calc(var(--fontSize) * 0.774840978);
+    }
+    main #container #tracks #paperSubmission #header,
+    main #container #tracks #decisionNotification #header,
+    main #container #tracks #ready #header,
+    main #container #tracks #paperSubmission p,
+    main #container #tracks #decisionNotification p,
+    main #container #tracks #ready p {
+        width: calc(var(--horizontal) / 2);
+        font-size: calc(var(--fontSize) * 0.729);
     }
     /* Styling of the footer */
     footer {
-        margin-top: calc(var(--vertical) * 0.283);
+        margin-top: calc(var(--vertical) * 0.74);
     }
     footer nav {
         font-size: calc(var(--fontSize) * 1.062882);
