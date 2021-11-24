@@ -8,3 +8,7 @@ CREATE TABLE icacie.User (
     UserFirstName VARCHAR(64) NOT NULL,
     UserLastName VARCHAR(64) NOT NULL
 );
+-- TEST 01
+DROP TABLE icacie.User;
+-- TEST 02
+SELECT * FROM icacie.User;

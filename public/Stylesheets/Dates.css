@@ -1,0 +1,322 @@
+/* Importing the fonts */
+@font-face {
+    font-family: "Optima";
+    src: url("../Fonts/Optima.TTF");
+    src: url("../Fonts/Optima - Bold.TTF");
+    src: url("../Fonts/Optima - Italic.ttf");
+    src: url("../Fonts/Optima - Medium.ttf");
+}
+@font-face {
+    font-family: "Century Gothic";
+    src: url("../Fonts/Century Gothic.ttf");
+}
+:root {
+    /* Declaration of the variables */
+    --vertical: 100%;
+    --horizontal: 100%;
+    --fontSize: 100%;
+    --optima: "Optima";
+    --centuryGothic: "Century Gothic";
+    --color1: rgb(167, 169, 172);
+    --color2: rgb(0, 125, 190);
+    --color3: rgb(0, 88, 138);
+    --color4: rgb(0, 171, 189);
+    --color5: rgb(84, 198, 211);
+    --color6: rgb(0, 183, 199);
+    --color7: rgb(35, 31, 32);
+    --color8: rgb(99, 100, 102);
+    --color9: rgb(255, 255, 255);
+    --color10: rgb(0, 0, 0);
+    --height: 768px;
+    --width: 1366px;
+}
+/* Styling of the body */
+* {
+    margin: calc(var(--vertical) * 0);
+    font-size: var(--fontSize);
+    font-family: var(--optima), var(--centuryGothic);
+    width: var(--horizontal);
+}
+/* Styling for the header */
+header,
+header nav {
+    width: var(--horizontal);
+}
+header #top,
+header #bottom {
+    display: flex;
+}
+header #bottom {
+    background-color: var(--color7);
+}
+header #top div,
+header #bottom div {
+    text-align: center;
+}
+header #top div {
+    width: calc(var(--horizontal) / 3);
+}
+header #top div #event,
+header #top div #venue,
+header #top div #date {
+    width: var(--horizontal);
+    font-weight: bold;
+    font-family: var(--centuryGothic);
+    margin: calc(var(--vertical) * 0.02) calc(var(--horizontal) * 0);
+}
+header #top div #venue #organization {
+    text-transform: uppercase;
+}
+header #top div #venue div {
+    width: var(--horizontal);
+    color: var(--color4);
+    margin: calc(var(--vertical) * 0.01) calc(var(--horizontal) * 0);
+}
+header #top #organizationLogo,
+header #top #icacieLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header #bottom div {
+    width: calc(var(--horizontal) / 10);
+    margin: calc(var(--vertical) * 0.01) calc(var(--horizontal) * 0);
+}
+header #bottom div a {
+    text-decoration: none;
+    color: var(--color5);
+}
+header #bottom div a:hover {
+    text-decoration: underline;
+    color: var(--color1);
+}
+/* Styling for the main */
+main {
+    width: var(--horizontal);
+}
+main h1 {
+    text-align: center;
+    font-family: var(--optima);
+    color: var(--color2);
+    border-bottom: 1px solid var(--color8);
+    padding-bottom: calc(var(--vertical) * 0.01);
+    text-transform: uppercase;
+}
+main #container,
+main #container #tracks #paperSubmission,
+main #container #tracks #decisionNotification,
+main #container #tracks #ready {
+    width: var(--horizontal);
+    display: flex;
+}
+main #container #tracks {
+    width: calc(var(--horizontal) * 0.48);
+    padding: calc(var(--vertical) * 0) calc(var(--horizontal) * 0.01);
+}
+main #container #tracks h1 {
+    color: var(--color7);
+    background-color: var(--color1);
+    font-family: var(--centuryGothic);
+    text-transform: capitalize;
+}
+main #container #tracks #paperSubmission,
+main #container #tracks #decisionNotification,
+main #container #tracks #ready,
+main #container #tracks #type {
+    margin: calc(var(--vertical) * 0.01) calc(var(--horizontal) * 0);
+}
+main #container #tracks #paperSubmission p,
+main #container #tracks #decisionNotification p,
+main #container #track #type,
+main #container #tracks #ready p {
+    font-family: var(--optima);
+}
+main #container #tracks #paperSubmission #header,
+main #container #tracks #decisionNotification #header,
+main #container #tracks #type,
+main #container #tracks #ready #header {
+    font-weight: bold;
+}
+/* Styling of the footer */
+footer {
+    background-color: var(--color7);
+    padding: calc(var(--vertical) * 0.01) calc(var(--horizontal) * 0);
+}
+footer nav {
+    width: var(--horizontal);
+    display: flex;
+    justify-content: space-between;
+}
+footer nav a {
+    opacity: 0.5;
+    text-decoration: none;
+    text-align: center;
+}
+footer nav a:hover {
+    opacity: 1;
+}
+footer nav .faFacebook,
+footer nav .faLinkedIn,
+footer nav .faCalendar {
+    color: var(--color9);
+}
+footer div {
+    color: var(--color9);
+    font-size: var(--fontSize);
+    text-align: center;
+}
+/* Media queries for Desktop */
+@media screen and (min-width: 1024px) {
+    /* Styling for the header */
+    header #top div #event {
+        font-size: calc(var(--fontSize) * 1.1);
+    }
+    header #top div #venue #organization {
+        font-size: calc(var(--fontSize) * 1.331);
+    }
+    header #top div #venue div {
+        font-size: calc(var(--fontSize) * 0.729);
+    }
+    header #top #organizationLogo a img,
+    header #top #icacieLogo a img {
+        width: calc(var(--horizontal) * 0.478297);
+        height: auto;
+    }
+    header #bottom div a {
+        font-size: calc(var(--fontSize) * 0.81);
+    }
+    header #top div #date {
+        font-size: var(--fontSize);
+    }
+    /* Styling for the main */
+    main h1 {
+        font-size: calc(var(--fontSize) * 2);
+    }
+    main #container #tracks h1 {
+        font-size: calc(var(--fontSize) * 1.8);
+    }
+    main #container #tracks #paperSubmission #header,
+    main #container #tracks #decisionNotification #header,
+    main #container #tracks #ready #header {
+        width: calc(var(--horizontal) * 0.295245);
+    }
+    main #container #tracks #paperSubmission p,
+    main #container #tracks #decisionNotification p,
+    main #container #tracks #ready p {
+        width: calc(var(--horizontal) * 0.704755);
+    }
+    /* Styling for the footer */
+    footer {
+        margin-top: calc(var(--vertical) * 0.083);
+    }
+    footer nav {
+        font-size: calc(var(--fontSize) * 2);
+    }
+    footer nav a img {
+        width: auto;
+        height: calc(var(--height) * 0.05);
+    }
+}
+/* Media queries for #sponsort */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Styling for the header */
+    header #top div #event {
+        font-size: calc(var(--fontSize) * 0.8019);
+    }
+    header #top div #venue #organization {
+        font-size: calc(var(--fontSize) * 0.970299);
+    }
+    header #top div #venue div {
+        font-size: calc(var(--fontSize) * 0.531441);
+    }
+    header #top #organizationLogo a img,
+    header #top #icacieLogo a img {
+        width: calc(var(--horizontal) * 0.636613307);
+        height: auto;
+    }
+    header #bottom div a {
+        font-size: calc(var(--fontSize) * 0.59049);
+    }
+    header #top div #date {
+        font-size: calc(var(--fontSize) * 0.729);
+    }
+    /* Styling for the main */
+    main h1 {
+        font-size: calc(var(--fontSize) * 1.458);
+    }
+    main #container #tracks h1 {
+        font-size: calc(var(--fontSize) * 1.3122);
+    }
+    main #container #tracks #paperSubmission #header,
+    main #container #tracks #decisionNotification #header,
+    main #container #tracks #ready #header {
+        width: calc(var(--horizontal) * 0.507509581);
+    }
+    main #container #tracks #paperSubmission p,
+    main #container #tracks #decisionNotification p,
+    main #container #tracks #ready p {
+        width: calc(var(--horizontal) * 0.492490418);
+    }
+    /* Styling of the footer */
+    footer {
+        margin-top: calc(var(--vertical) * 0.79);
+    }
+    footer nav {
+        font-size: calc(var(--fontSize) * 1.458);
+    }
+    footer nav a img {
+        width: auto;
+        height: calc(var(--height) * 0.03645);
+    }
+}
+/* Media queries for Mobile */
+@media screen and (max-width: 767px) {
+    /* Styling for the header */
+    header #top div #event {
+        font-size: calc(var(--fontSize) * 0.5845851);
+    }
+    header #top div #venue #organization {
+        font-size: calc(var(--fontSize) * 0.707347971);
+    }
+    header #top div #venue div {
+        font-size: calc(var(--fontSize) * 0.387420489);
+    }
+    header #top #organizationLogo a img,
+    header #top #icacieLogo a img {
+        width: calc(var(--horizontal) * 0.847332311);
+        height: auto;
+    }
+    header #bottom div a {
+        font-size: calc(var(--fontSize) * 0.43046721);
+    }
+    header #top div #date {
+        font-size: calc(var(--fontSize) * 0.531441);
+    }
+    /* Styling for the main */
+    main h1 {
+        font-size: calc(var(--fontSize) * 1.062882);
+    }
+    main #container #tracks h1 {
+        font-size: calc(var(--fontSize) * 0.774840978);
+    }
+    main #container #tracks #paperSubmission #header,
+    main #container #tracks #decisionNotification #header,
+    main #container #tracks #ready #header,
+    main #container #tracks #paperSubmission p,
+    main #container #tracks #decisionNotification p,
+    main #container #tracks #ready p {
+        width: calc(var(--horizontal) / 2);
+        font-size: calc(var(--fontSize) * 0.729);
+    }
+    /* Styling of the footer */
+    footer {
+        margin-top: calc(var(--vertical) * 0.74);
+    }
+    footer nav {
+        font-size: calc(var(--fontSize) * 1.062882);
+    }
+    footer nav a img {
+        width: auto;
+        height: calc(var(--height) * 0.02657205);
+    }
+}
