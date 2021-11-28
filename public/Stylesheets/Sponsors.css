@@ -101,18 +101,18 @@ main h1 {
     border-bottom: 1px solid var(--color8);
     padding-bottom: calc(var(--vertical) * 0.01);
 }
-main #financialSponsorship,
+main .financialSponsorship,
 main #contact {
     margin: calc(var(--vertical) * 0.01) calc(var(--horizontal) * 0.01);
     width: calc(var(--horizontal) * 0.98);
     font-family: var(--centuryGothic);
 }
-main #financialSponsorship a,
+main .financialSponsorship a,
 main #contact a {
     color: var(--color10);
     text-decoration: none;
 }
-main #financialSponsorship a:hover,
+main .financialSponsorship a:hover,
 main #contact a:hover {
     color: var(--color2);
     text-decoration: underline;
@@ -127,8 +127,8 @@ main #advertisement tr {
     width: var(--horizontal);
     display: flex;
 }
-main #sponsor #tableHeader,
-main #advertisement #tableHeader {
+main #sponsor .tableHeader,
+main #advertisement .tableHeader {
     background-color: var(--color2);
     color: var(--color9);
 }
@@ -210,30 +210,30 @@ footer div {
     main h1 {
         font-size: calc(var(--fontSize) * 2);
     }
-    main #financialSponsorship,
+    main .financialSponsorship,
     main #contact {
         font-size: calc(var(--fontSize) * 0.9);
     }
-    main #sponsor #tableHeader #category,
-    main #sponsor #tableHeader #minimumAmount,
-    main #sponsor #tableHeader #benefits,
-    main #advertisement #tableHeader #tarrif,
-    main #advertisement #tableHeader #particulars {
+    main #sponsor .tableHeader .category,
+    main #sponsor .tableHeader .miminumAmount,
+    main #sponsor .tableHeader .benefits,
+    main #advertisement .tableHeader .tarrif,
+    main #advertisement .tableHeader .particulars {
         font-size: calc(var(--fontSize) * 1.458);
     }
-    main #sponsor tr #category {
+    main #sponsor tr .category {
         width: calc(var(--horizontal) * 0.116226146);
     }
-    main #sponsor tr #minimumAmount {
+    main #sponsor tr .miminumAmount {
         width: calc(var(--horizontal) * 0.1594323);
     }
-    main #sponsor tr #benefits {
+    main #sponsor tr .benefits {
         width: calc(var(--horizontal) * 0.724341553);
     }
-    main #advertisement tr #tarrif {
+    main #advertisement tr .tarrif {
         width: calc(var(--horizontal) * 0.1937102445);
     }
-    main #advertisement tr #particulars {
+    main #advertisement tr .particulars {
         width: calc(var(--horizontal) * 0.8062897555);
     }
     main #sponsor tr td ul {
@@ -276,30 +276,30 @@ footer div {
     main h1 {
         font-size: calc(var(--fontSize) * 1.458);
     }
-    main #financialSponsorship,
+    main .financialSponsorship,
     main #contact {
         font-size: calc(var(--fontSize) * 0.6561);
     }
-    main #sponsor #tableHeader #category,
-    main #sponsor #tableHeader #minimumAmount,
-    main #sponsor #tableHeader #benefits,
-    main #advertisement #tableHeader #tarrif,
-    main #advertisement #tableHeader #particulars {
+    main #sponsor .tableHeader .category,
+    main #sponsor .tableHeader .miminumAmount,
+    main #sponsor .tableHeader .benefits,
+    main #advertisement .tableHeader .tarrif,
+    main #advertisement .tableHeader .particulars {
         font-size: calc(var(--fontSize) * 1.062882);
     }
-    main #sponsor tr #category {
+    main #sponsor tr .category {
         width: calc(var(--horizontal) * 0.2264918782);
     }
-    main #sponsor tr #minimumAmount {
+    main #sponsor tr .miminumAmount {
         width: calc(var(--horizontal) * 0.2567673135);
     }
-    main #sponsor tr #benefits {
+    main #sponsor tr .benefits {
         width: calc(var(--horizontal) * 0.5167408083);
     }
-    main #advertisement tr #tarrif {
+    main #advertisement tr .tarrif {
         width: calc(var(--horizontal) * 0.257828335);
     }
-    main #advertisement tr #particulars {
+    main #advertisement tr .particulars {
         width: calc(var(--horizontal) * 0.742171664);
     }
     main #sponsor tr td ul {
@@ -342,37 +342,37 @@ footer div {
     main h1 {
         font-size: calc(var(--fontSize) * 1.062882);
     }
-    main #financialSponsorship,
+    main .financialSponsorship,
     main #contact {
         font-size: calc(var(--fontSize) * 0.6561);
     }
-    main #sponsor #tableHeader #category,
-    main #sponsor #tableHeader #minimumAmount,
-    main #sponsor #tableHeader #benefits,
-    main #advertisement #tableHeader #tarrif,
-    main #advertisement #tableHeader #particulars {
+    main #sponsor .tableHeader .category,
+    main #sponsor .tableHeader .miminumAmount,
+    main #sponsor .tableHeader .benefits,
+    main #advertisement .tableHeader .tarrif,
+    main #advertisement .tableHeader .particulars {
         font-size: calc(var(--fontSize) * 0.774840978);
     }
-    main #sponsor tr #category,
-    main #sponsor tr #minimumAmount,
-    main #sponsor tr #benefits,
-    main #advertisement tr #tarrif,
-    main #advertisement tr #particulars {
+    main #sponsor tr .category,
+    main #sponsor tr .miminumAmount,
+    main #sponsor tr .benefits,
+    main #advertisement tr .tarrif,
+    main #advertisement tr .particulars {
         font-size: calc(var(--fontSize) * 0.729);
     }
-    main #sponsor tr #category {
+    main #sponsor tr .category {
         width: calc(var(--horizontal) * 0.3333333333);
     }
-    main #sponsor tr #minimumAmount {
+    main #sponsor tr .miminumAmount {
         width: calc(var(--horizontal) * 0.4436666667);
     }
-    main #sponsor tr #benefits {
+    main #sponsor tr .benefits {
         width: calc(var(--horizontal) * 0.223);
     }
-    main #advertisement tr #tarrif {
+    main #advertisement tr .tarrif {
         width: calc(var(--horizontal) * 0.405);
     }
-    main #advertisement tr #particulars {
+    main #advertisement tr .particulars {
         width: calc(var(--horizontal) * 0.595);
     }
     main #sponsor tr td ul {

@@ -64,7 +64,7 @@ header #top div #date {
     font-family: var(--centuryGothic);
     margin: calc(var(--vertical) * 0.02) calc(var(--horizontal) * 0);
 }
-header #top div #venue #organization {
+header #top div #venue .organization {
     text-transform: uppercase;
 }
 header #top div #venue div {
@@ -158,7 +158,7 @@ footer div {
     header #top div #event {
         font-size: calc(var(--fontSize) * 1.1);
     }
-    header #top div #venue #organization {
+    header #top div #venue .organization {
         font-size: calc(var(--fontSize) * 1.331);
     }
     header #top div #venue div {
@@ -195,7 +195,7 @@ footer div {
     header #top div #event {
         font-size: calc(var(--fontSize) * 0.8019);
     }
-    header #top div #venue #organization {
+    header #top div #venue .organization {
         font-size: calc(var(--fontSize) * 0.970299);
     }
     header #top div #venue div {
@@ -235,7 +235,7 @@ footer div {
     header #top div #event {
         font-size: calc(var(--fontSize) * 0.5845851);
     }
-    header #top div #venue #organization {
+    header #top div #venue .organization {
         font-size: calc(var(--fontSize) * 0.707347971);
     }
     header #top div #venue div {

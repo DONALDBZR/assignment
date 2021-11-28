@@ -91,7 +91,154 @@ header #bottom div a:hover {
     color: var(--color1);
 }
 /* Styling for the main */
-
+main {
+    width: var(--horizontal);
+}
+main h1,
+main #patron h1,
+main #advisoryCommittee h1,
+main #organizingChair h1,
+main #websiteChairs h1,
+main #publicationChairs h1,
+main #publicityChairs h1,
+main #sponsorshipChairs h1,
+main #financeChairs h1,
+main #registrationChairs h1,
+main #panelChairs h1,
+main #industryExpoChairs h1,
+main #studentResearchForumChairs h1,
+main #womenInEngineeringChairs h1,
+main #specialSessionChairs h1,
+main #specialSessionCommitteeMembers h1 {
+    font-family: var(--centuryGothic);
+    font-weight: bold;
+    color: var(--color4);
+    width: calc(var(--horizontal) * 0.98);
+    border-bottom: calc(var(--height) * (1 / 768)) solid var(--color8);
+}
+main h1,
+main #patron,
+main #advisoryCommittee,
+main #generalChairs,
+main #honoraryGeneralChairs,
+main #organizingChair,
+main #websiteChairs,
+main #publicationChairs,
+main #publicityChairs,
+main #sponsorshipChairs,
+main #financeChairs,
+main #registrationChairs,
+main #panelChairs,
+main #industryExpoChairs,
+main #studentResearchForumChairs,
+main #womenInEngineeringChairs,
+main #specialSessionChairs,
+main #specialSessionCommitteeMembers {
+    margin: calc(var(--vertical) * 0) calc(var(--horizontal) * 0.01);
+    padding-bottom: calc(var(--vertical) * 0.01);
+}
+main #patron,
+main #advisoryCommittee,
+main #generalChairs,
+main #honoraryGeneralChairs,
+main #organizingChair,
+main #websiteChairs,
+main #publicationChairs,
+main #publicityChairs,
+main #sponsorshipChairs,
+main #financeChairs,
+main #registrationChairs,
+main #panelChairs,
+main #industryExpoChairs,
+main #studentResearchForumChairs,
+main #womenInEngineeringChairs,
+main #specialSessionChairs,
+main #specialSessionCommitteeMembers {
+    border-bottom: calc(var(--height) * (1 / 768)) solid var(--color8);
+    width: calc(var(--horizontal) * 0.98);
+}
+main #patron h1,
+main #advisoryCommittee h1,
+main #generalChairs h1,
+main #honoraryGeneralChairs h1,
+main #organizingChair h1,
+main #websiteChairs h1,
+main #publicationChairs h1,
+main #publicityChairs h1,
+main #sponsorshipChairs h1,
+main #financeChairs h1,
+main #registrationChairs h1,
+main #panelChairs h1,
+main #industryExpoChairs h1,
+main #studentResearchForumChairs h1,
+main #womenInEngineeringChairs h1,
+main #specialSessionChairs h1,
+main #specialSessionCommitteeMembers h1 {
+    padding-bottom: calc(var(--vertical) * 0.006561);
+    margin: calc(var(--vertical) * 0);
+    border: none;
+}
+main #patron .patron,
+main #advisoryCommittee .advisoryCommittee,
+main #generalChairs .generalChairs,
+main #honoraryGeneralChairs .honoraryGeneralChairs,
+main #organizingChair .organizingChair,
+main #websiteChairs .websiteChairs,
+main #publicationChairs .publicationChairs,
+main #publicityChairs .publicityChairs,
+main #sponsorshipChairs .sponsorshipChairs,
+main #financeChairs .financeChairs,
+main #registrationChairs .registrationChairs,
+main #panelChairs .panelChairs,
+main #industryExpoChairs .industryExpoChairs,
+main #studentResearchForumChairs .studentResearchForumChairs,
+main #womenInEngineeringChairs .womenInEngineeringChairs,
+main #specialSessionChairs .specialSessionChairs,
+main #specialSessionCommitteeMembers .specialSessionCommitteeMembers {
+    width: calc(var(--horizontal) * 0.98);
+    margin: calc(var(--vertical) * 0);
+    display: flex;
+}
+main #patron .patron div,
+main #advisoryCommittee .advisoryCommittee div,
+main #generalChairs .generalChairs div,
+main #honoraryGeneralChairs .honoraryGeneralChairs div,
+main #organizingChair .organizingChair div,
+main #websiteChairs .websiteChairs div,
+main #publicationChairs .publicationChairs div,
+main #publicityChairs .publicityChairs div,
+main #sponsorshipChairs .sponsorshipChairs div,
+main #financeChairs .financeChairs div,
+main #registrationChairs .registrationChairs div,
+main #panelChairs .panelChairs div,
+main #industryExpoChairs .industryExpoChairs div,
+main #studentResearchForumChairs .studentResearchForumChairs div,
+main #womenInEngineeringChairs .womenInEngineeringChairs div,
+main #specialSessionChairs .specialSessionChairs div,
+main #specialSessionCommitteeMembers .specialSessionCommitteeMembers div {
+    font-family: var(--optima);
+}
+main #patron .patron .name,
+main #advisoryCommittee .advisoryCommittee .name,
+main #generalChairs .generalChairs .name,
+main #honoraryGeneralChairs .honoraryGeneralChairs .name,
+main #organizingChair .organizingChair .name,
+main #websiteChairs .websiteChairs .name,
+main #publicationChairs .publicationChairs .name,
+main #publicityChairs .publicityChairs .name,
+main #sponsorshipChairs .sponsorshipChairs .name,
+main #financeChairs .financeChairs .name,
+main #registrationChairs .registrationChairs .name,
+main #panelChairs .panelChairs .name,
+main #industryExpoChairs .industryExpoChairs .name,
+main #studentResearchForumChairs .studentResearchForumChairs .name,
+main #womenInEngineeringChairs .womenInEngineeringChairs .name,
+main #specialSessionChairs .specialSessionChairs .name,
+main #specialSessionCommitteeMembers .specialSessionCommitteeMembers .name {
+    font-family: var(--centuryGothic);
+    font-weight: bold;
+    margin-right: calc(var(--horizontal) * 0.01);
+}
 /* Styling of the footer */
 footer {
     background-color: var(--color7);
@@ -144,11 +291,67 @@ footer div {
         font-size: var(--fontSize);
     }
     /* Styling for the main */
-
-    /* Styling for the footer */
-    footer {
-        margin-top: calc(var(--vertical) * 0.231);
+    main h1 {
+        font-size: calc(var(--fontSize) * 1.8);
     }
+    main #patron .patron div,
+    main #advisoryCommittee .advisoryCommittee div,
+    main #generalChairs .generalChairs div,
+    main #honoraryGeneralChairs .honoraryGeneralChairs div,
+    main #organizingChair .organizingChair div,
+    main #websiteChairs .websiteChairs div,
+    main #publicationChairs .publicationChairs div,
+    main #publicityChairs .publicityChairs div,
+    main #sponsorshipChairs .sponsorshipChairs div,
+    main #financeChairs .financeChairs div,
+    main #registrationChairs .registrationChairs div,
+    main #panelChairs .panelChairs div,
+    main #industryExpoChairs .industryExpoChairs div,
+    main #studentResearchForumChairs .studentResearchForumChairs div,
+    main #womenInEngineeringChairs .womenInEngineeringChairs div,
+    main #specialSessionChairs .specialSessionChairs div,
+    main #specialSessionCommitteeMembers .specialSessionCommitteeMembers div {
+        width: calc(var(--horizontal) * 0.8);
+    }
+    main #patron .patron .name,
+    main #advisoryCommittee .advisoryCommittee .name,
+    main #generalChairs .generalChairs .name,
+    main #honoraryGeneralChairs .honoraryGeneralChairs .name,
+    main #organizingChair .organizingChair .name,
+    main #websiteChairs .websiteChairs .name,
+    main #publicationChairs .publicationChairs .name,
+    main #publicityChairs .publicityChairs .name,
+    main #sponsorshipChairs .sponsorshipChairs .name,
+    main #financeChairs .financeChairs .name,
+    main #registrationChairs .registrationChairs .name,
+    main #panelChairs .panelChairs .name,
+    main #industryExpoChairs .industryExpoChairs .name,
+    main #studentResearchForumChairs .studentResearchForumChairs .name,
+    main #womenInEngineeringChairs .womenInEngineeringChairs .name,
+    main #specialSessionChairs .specialSessionChairs .name,
+    main #specialSessionCommitteeMembers .specialSessionCommitteeMembers .name {
+        width: calc(var(--horizontal) * 0.19);
+    }
+    main #patron h1,
+    main #advisoryCommittee h1,
+    main #generalChairs h1,
+    main #honoraryGeneralChairs h1,
+    main #organizingChair h1,
+    main #websiteChairs h1,
+    main #publicationChairs h1,
+    main #publicityChairs h1,
+    main #sponsorshipChairs h1,
+    main #financeChairs h1,
+    main #registrationChairs h1,
+    main #panelChairs h1,
+    main #industryExpoChairs h1,
+    main #studentResearchForumChairs h1,
+    main #womenInEngineeringChairs h1,
+    main #specialSessionChairs h1,
+    main #specialSessionCommitteeMembers h1 {
+        font-size: calc(var(--fontSize) * 1.3122);
+    }
+    /* Styling for the footer */
     footer nav {
         font-size: calc(var(--fontSize) * 2);
     }
@@ -181,11 +384,68 @@ footer div {
         font-size: calc(var(--fontSize) * 0.729);
     }
     /* Styling for the main */
-
-    /* Styling of the footer */
-    footer {
-        margin-top: calc(var(--vertical) * 0.994);
+    main h1 {
+        font-size: calc(var(--fontSize) * 1.3122);
     }
+    main #patron .patron div,
+    main #advisoryCommittee .advisoryCommittee div,
+    main #generalChairs .generalChairs div,
+    main #honoraryGeneralChairs .honoraryGeneralChairs div,
+    main #organizingChair .organizingChair div,
+    main #websiteChairs .websiteChairs div,
+    main #publicationChairs .publicationChairs div,
+    main #publicityChairs .publicityChairs div,
+    main #sponsorshipChairs .sponsorshipChairs div,
+    main #financeChairs .financeChairs div,
+    main #registrationChairs .registrationChairs div,
+    main #panelChairs .panelChairs div,
+    main #industryExpoChairs .industryExpoChairs div,
+    main #studentResearchForumChairs .studentResearchForumChairs div,
+    main #womenInEngineeringChairs .womenInEngineeringChairs div,
+    main #specialSessionChairs .specialSessionChairs div,
+    main #specialSessionCommitteeMembers .specialSessionCommitteeMembers div {
+        width: calc(var(--horizontal) * 0.65340341);
+        font-size: calc(var(--fontSize) * 0.729);
+    }
+    main #patron .patron .name,
+    main #advisoryCommittee .advisoryCommittee .name,
+    main #generalChairs .generalChairs .name,
+    main #honoraryGeneralChairs .honoraryGeneralChairs .name,
+    main #organizingChair .organizingChair .name,
+    main #websiteChairs .websiteChairs .name,
+    main #publicationChairs .publicationChairs .name,
+    main #publicityChairs .publicityChairs .name,
+    main #sponsorshipChairs .sponsorshipChairs .name,
+    main #financeChairs .financeChairs .name,
+    main #registrationChairs .registrationChairs .name,
+    main #panelChairs .panelChairs .name,
+    main #industryExpoChairs .industryExpoChairs .name,
+    main #studentResearchForumChairs .studentResearchForumChairs .name,
+    main #womenInEngineeringChairs .womenInEngineeringChairs .name,
+    main #specialSessionChairs .specialSessionChairs .name,
+    main #specialSessionCommitteeMembers .specialSessionCommitteeMembers .name {
+        width: calc(var(--horizontal) * 0.33659659);
+    }
+    main #patron h1,
+    main #advisoryCommittee h1,
+    main #generalChairs h1,
+    main #honoraryGeneralChairs h1,
+    main #organizingChair h1,
+    main #websiteChairs h1,
+    main #publicationChairs h1,
+    main #publicityChairs h1,
+    main #sponsorshipChairs h1,
+    main #financeChairs h1,
+    main #registrationChairs h1,
+    main #panelChairs h1,
+    main #industryExpoChairs h1,
+    main #studentResearchForumChairs h1,
+    main #womenInEngineeringChairs h1,
+    main #specialSessionChairs h1,
+    main #specialSessionCommitteeMembers h1 {
+        font-size: calc(var(--fontSize) * 0.9565938);
+    }
+    /* Styling of the footer */
     footer nav {
         font-size: calc(var(--fontSize) * 1.458);
     }
@@ -218,11 +478,68 @@ footer div {
         font-size: calc(var(--fontSize) * 0.531441);
     }
     /* Styling for the main */
-
-    /* Styling of the footer */
-    footer {
-        margin-top: calc(var(--vertical) * 1.21);
+    main h1 {
+        font-size: calc(var(--fontSize) * 0.9565938);
     }
+    main #patron .patron div,
+    main #advisoryCommittee .advisoryCommittee div,
+    main #generalChairs .generalChairs div,
+    main #honoraryGeneralChairs .honoraryGeneralChairs div,
+    main #organizingChair .organizingChair div,
+    main #websiteChairs .websiteChairs div,
+    main #publicationChairs .publicationChairs div,
+    main #publicityChairs .publicityChairs div,
+    main #sponsorshipChairs .sponsorshipChairs div,
+    main #financeChairs .financeChairs div,
+    main #registrationChairs .registrationChairs div,
+    main #panelChairs .panelChairs div,
+    main #industryExpoChairs .industryExpoChairs div,
+    main #studentResearchForumChairs .studentResearchForumChairs div,
+    main #womenInEngineeringChairs .womenInEngineeringChairs div,
+    main #specialSessionChairs .specialSessionChairs div,
+    main #specialSessionCommitteeMembers .specialSessionCommitteeMembers div {
+        width: calc(var(--horizontal) * 0.590823035);
+        font-size: calc(var(--fontSize) * 0.43046721);
+    }
+    main #patron .patron .name,
+    main #advisoryCommittee .advisoryCommittee .name,
+    main #generalChairs .generalChairs .name,
+    main #honoraryGeneralChairs .honoraryGeneralChairs .name,
+    main #organizingChair .organizingChair .name,
+    main #websiteChairs .websiteChairs .name,
+    main #publicationChairs .publicationChairs .name,
+    main #publicityChairs .publicityChairs .name,
+    main #sponsorshipChairs .sponsorshipChairs .name,
+    main #financeChairs .financeChairs .name,
+    main #registrationChairs .registrationChairs .name,
+    main #panelChairs .panelChairs .name,
+    main #industryExpoChairs .industryExpoChairs .name,
+    main #studentResearchForumChairs .studentResearchForumChairs .name,
+    main #womenInEngineeringChairs .womenInEngineeringChairs .name,
+    main #specialSessionChairs .specialSessionChairs .name,
+    main #specialSessionCommitteeMembers .specialSessionCommitteeMembers .name {
+        width: calc(var(--horizontal) * 0.399176964);
+    }
+    main #patron h1,
+    main #advisoryCommittee h1,
+    main #generalChairs h1,
+    main #honoraryGeneralChairs h1,
+    main #organizingChair h1,
+    main #websiteChairs h1,
+    main #publicationChairs h1,
+    main #publicityChairs h1,
+    main #sponsorshipChairs h1,
+    main #financeChairs h1,
+    main #registrationChairs h1,
+    main #panelChairs h1,
+    main #industryExpoChairs h1,
+    main #studentResearchForumChairs h1,
+    main #womenInEngineeringChairs h1,
+    main #specialSessionChairs h1,
+    main #specialSessionCommitteeMembers h1 {
+        font-size: calc(var(--fontSize) * 0.69735688);
+    }
+    /* Styling of the footer */
     footer nav {
         font-size: calc(var(--fontSize) * 1.062882);
     }

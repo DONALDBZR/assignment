@@ -95,10 +95,64 @@ main {
     width: var(--horizontal);
 }
 main div {
-    font-family: var(--centuryGothic);
-    font-weight: bold;
+    width: calc(var(--horizontal) * 0.98);
+    margin: calc(var(--vertical) * 0) calc(var(--horizontal) * 0.01);
+    display: flex;
+    flex-wrap: wrap;
+}
+main div .card {
+    background-color: var(--color9);
+    display: block;
     text-align: center;
-    color: var(--color4);
+}
+main div .card:hover {
+    background-color: var(--color2);
+}
+main div .card .profilePicture,
+main div .card .name,
+main div .card .profession,
+main div .card .institution {
+    display: block;
+}
+main div .card .profilePicture img {
+    width: var(--horizontal);
+    height: auto;
+}
+main div .card .name,
+main div .card .profession,
+main div .card .institution {
+    font-weight: bold;
+    color: var(--color2);
+    padding: calc(var(--vertical) * 0.01) calc(var(--horizontal) * 0);
+}
+main div .card .name {
+    font-family: var(--centuryGothic);
+}
+main div .card .profession,
+main div .card .institution {
+    font-family: var(--optima);
+    text-transform: capitalize;
+}
+main div .card .link {
+    display: flex;
+    justify-content: center;
+}
+main div .card .link a {
+    text-decoration: none;
+}
+main div .card .link .faVideo {
+    color: var(--color2);
+    width: unset;
+}
+main div .card:hover .link .faVideo,
+main div .card:hover .profession,
+main div .card:hover .name,
+main div .card:hover .institution {
+    color: var(--color10);
+}
+main div .card .link .faVideo:hover {
+    color: var(--color9);
+    width: unset;
 }
 /* Styling of the footer */
 footer {
@@ -152,13 +206,21 @@ footer div {
         font-size: var(--fontSize);
     }
     /* Styling for the main */
-    main div {
+    main div .card {
+        width: calc(var(--horizontal) / 6);
+        margin: calc(var(--vertical) * 0.01) calc(var(--horizontal) * (1 / 60));
+    }
+    main div .card .name {
+        font-size: calc(var(--fontSize) * 1.62);
+    }
+    main div .card .profession,
+    main div .card .institution {
+        font-size: calc(var(--fontSize) * 0.9);
+    }
+    main div .card .link a {
         font-size: calc(var(--fontSize) * 2);
     }
     /* Styling for the footer */
-    footer {
-        margin-top: calc(var(--vertical) * 0.199);
-    }
     footer nav {
         font-size: calc(var(--fontSize) * 2);
     }
@@ -191,13 +253,21 @@ footer div {
         font-size: calc(var(--fontSize) * 0.729);
     }
     /* Styling for the main */
-    main div {
+    main div .card {
+        width: calc(var(--horizontal) / 4);
+        margin: calc(var(--vertical) * 0.01) calc(var(--horizontal) * (1 / 24));
+    }
+    main div .card .name {
+        font-size: calc(var(--fontSize) * 1.18098);
+    }
+    main div .card .profession,
+    main div .card .institution {
+        font-size: calc(var(--fontSize) * 0.6561);
+    }
+    main div .card .link a {
         font-size: calc(var(--fontSize) * 1.458);
     }
     /* Styling of the footer */
-    footer {
-        margin-top: calc(var(--vertical) * 0.958);
-    }
     footer nav {
         font-size: calc(var(--fontSize) * 1.458);
     }
@@ -230,13 +300,21 @@ footer div {
         font-size: calc(var(--fontSize) * 0.531441);
     }
     /* Styling for the main */
-    main div {
+    main div .card {
+        width: calc(var(--horizontal) / 3);
+        margin: calc(var(--vertical) * 0.01) calc(var(--horizontal) * (1 / 12));
+    }
+    main div .card .name {
+        font-size: calc(var(--fontSize) * 0.86093442);
+    }
+    main div .card .profession,
+    main div .card .institution {
+        font-size: calc(var(--fontSize) * 0.4782969);
+    }
+    main div .card .link a {
         font-size: calc(var(--fontSize) * 1.062882);
     }
     /* Styling of the footer */
-    footer {
-        margin-top: calc(var(--vertical) * 1.14);
-    }
     footer nav {
         font-size: calc(var(--fontSize) * 1.062882);
     }

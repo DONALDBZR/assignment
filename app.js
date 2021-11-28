@@ -181,8 +181,8 @@ class Server {
         this.server;
         this.path = "";
         this.body = "";
-        // Instantiating the user
-        this.User = new User();
+        // // Instantiating the user
+        // this.User = new User();
         // Instantiating the router
         this.router = this.express.Router("caseSensitive");
         // Options for CORS
@@ -230,20 +230,20 @@ class Server {
             (request, response) =>
                 response.sendFile(__dirname + "/views/Pages/Register.html")
         );
-        this.application.post(
-            "/Register",
-            this.cors(this.corsOptions),
-            (request, response) => {
-                // Retrieving data from the form
-                this.User.firstName = request.body.firstName;
-                this.User.lastName = request.body.lastName;
-                this.User.mailAddress = request.body.mailAddress;
-                this.User.password = request.body.password;
-                // Registering the user
-                this.User.register();
-                // Rendering the HTML
-            }
-        );
+        // this.application.post(
+        //     "/Register",
+        //     this.cors(this.corsOptions),
+        //     (request, response) => {
+        //         // Retrieving data from the form
+        //         this.User.firstName = request.body.firstName;
+        //         this.User.lastName = request.body.lastName;
+        //         this.User.mailAddress = request.body.mailAddress;
+        //         this.User.password = request.body.password;
+        //         // Registering the user
+        //         this.User.register();
+        //         // Rendering the HTML
+        //     }
+        // );
         // Processing the contact us
         this.application.get(
             "/Contact",
@@ -299,6 +299,13 @@ class Server {
             this.cors(this.corsOptions),
             (request, response) =>
                 response.sendFile(__dirname + "/views/Pages/Dates.html")
+        );
+        // Processing the Link
+        this.application.get(
+            "/Massimo/Link",
+            this.cors(this.corsOptions),
+            (request, response) =>
+                response.sendFile(__dirname + "/views/Pages/Massimo.html")
         );
     }
 }
