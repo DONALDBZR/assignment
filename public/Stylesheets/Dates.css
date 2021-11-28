@@ -103,38 +103,38 @@ main h1 {
     text-transform: uppercase;
 }
 main #container,
-main #container #tracks #paperSubmission,
-main #container #tracks #decisionNotification,
-main #container #tracks #ready {
+main #container .tracks .paperSubmission,
+main #container .tracks .decisionNotification,
+main #container .tracks #ready {
     width: var(--horizontal);
     display: flex;
 }
-main #container #tracks {
+main #container .tracks {
     width: calc(var(--horizontal) * 0.48);
     padding: calc(var(--vertical) * 0) calc(var(--horizontal) * 0.01);
 }
-main #container #tracks h1 {
+main #container .tracks h1 {
     color: var(--color7);
     background-color: var(--color1);
     font-family: var(--centuryGothic);
     text-transform: capitalize;
 }
-main #container #tracks #paperSubmission,
-main #container #tracks #decisionNotification,
-main #container #tracks #ready,
-main #container #tracks #type {
+main #container .tracks .paperSubmission,
+main #container .tracks .decisionNotification,
+main #container .tracks #ready,
+main #container .tracks .type {
     margin: calc(var(--vertical) * 0.01) calc(var(--horizontal) * 0);
 }
-main #container #tracks #paperSubmission p,
-main #container #tracks #decisionNotification p,
-main #container #track #type,
-main #container #tracks #ready p {
+main #container .tracks .paperSubmission p,
+main #container .tracks .decisionNotification p,
+main #container #track .type,
+main #container .tracks #ready p {
     font-family: var(--optima);
 }
-main #container #tracks #paperSubmission #header,
-main #container #tracks #decisionNotification #header,
-main #container #tracks #type,
-main #container #tracks #ready #header {
+main #container .tracks .paperSubmission .header,
+main #container .tracks .decisionNotification .header,
+main #container .tracks .type,
+main #container .tracks #ready .header {
     font-weight: bold;
 }
 /* Styling of the footer */
@@ -192,17 +192,17 @@ footer div {
     main h1 {
         font-size: calc(var(--fontSize) * 2);
     }
-    main #container #tracks h1 {
+    main #container .tracks h1 {
         font-size: calc(var(--fontSize) * 1.8);
     }
-    main #container #tracks #paperSubmission #header,
-    main #container #tracks #decisionNotification #header,
-    main #container #tracks #ready #header {
+    main #container .tracks .paperSubmission .header,
+    main #container .tracks .decisionNotification .header,
+    main #container .tracks #ready .header {
         width: calc(var(--horizontal) * 0.295245);
     }
-    main #container #tracks #paperSubmission p,
-    main #container #tracks #decisionNotification p,
-    main #container #tracks #ready p {
+    main #container .tracks .paperSubmission p,
+    main #container .tracks .decisionNotification p,
+    main #container .tracks #ready p {
         width: calc(var(--horizontal) * 0.704755);
     }
     /* Styling for the footer */
@@ -244,17 +244,17 @@ footer div {
     main h1 {
         font-size: calc(var(--fontSize) * 1.458);
     }
-    main #container #tracks h1 {
+    main #container .tracks h1 {
         font-size: calc(var(--fontSize) * 1.3122);
     }
-    main #container #tracks #paperSubmission #header,
-    main #container #tracks #decisionNotification #header,
-    main #container #tracks #ready #header {
+    main #container .tracks .paperSubmission .header,
+    main #container .tracks .decisionNotification .header,
+    main #container .tracks #ready .header {
         width: calc(var(--horizontal) * 0.507509581);
     }
-    main #container #tracks #paperSubmission p,
-    main #container #tracks #decisionNotification p,
-    main #container #tracks #ready p {
+    main #container .tracks .paperSubmission p,
+    main #container .tracks .decisionNotification p,
+    main #container .tracks #ready p {
         width: calc(var(--horizontal) * 0.492490418);
     }
     /* Styling of the footer */
@@ -296,15 +296,15 @@ footer div {
     main h1 {
         font-size: calc(var(--fontSize) * 1.062882);
     }
-    main #container #tracks h1 {
+    main #container .tracks h1 {
         font-size: calc(var(--fontSize) * 0.774840978);
     }
-    main #container #tracks #paperSubmission #header,
-    main #container #tracks #decisionNotification #header,
-    main #container #tracks #ready #header,
-    main #container #tracks #paperSubmission p,
-    main #container #tracks #decisionNotification p,
-    main #container #tracks #ready p {
+    main #container .tracks .paperSubmission .header,
+    main #container .tracks .decisionNotification .header,
+    main #container .tracks #ready .header,
+    main #container .tracks .paperSubmission p,
+    main #container .tracks .decisionNotification p,
+    main #container .tracks #ready p {
         width: calc(var(--horizontal) / 2);
         font-size: calc(var(--fontSize) * 0.729);
     }
